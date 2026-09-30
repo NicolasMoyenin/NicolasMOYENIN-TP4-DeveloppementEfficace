@@ -2,7 +2,9 @@ package Exercice_1_Arbres;
 
 
 import java.util.ArrayList;
-import java.util.List;public class Arbre {
+import java.util.List;
+
+public class Arbre {
 
     private String val;
     private List<Arbre> enfants;
@@ -83,6 +85,8 @@ import java.util.List;public class Arbre {
         System.out.println(html);
         System.out.println("\n\n");
 
+
+        //Agrandissement de l'arbre
         Arbre h1 = new Arbre("h1");
         Arbre p = new Arbre("p");
         body.setEnfant(h1);
@@ -92,12 +96,13 @@ import java.util.List;public class Arbre {
 
 
         //Parcours prefixe
-        System.out.println("\n\n");
+        System.out.println("\n\nParcours préfixé : \n");
 
         html.parcoursPrefixe();
         System.out.println(html);
 
-        System.out.println("\n\n");
+        //Parcours prefixe en String
+        System.out.println("\n\nParcours préfixé en String : \n");
         System.out.println(html.toStringPrefixe());
 
         System.out.println("\n\n");
